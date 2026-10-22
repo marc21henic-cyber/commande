@@ -5,8 +5,8 @@ const quantite = 2;
 const fraislivraison = 50000;
 const TVA = 18;
 const montantproduits = prixunitaire*quantite
-const montantTVA = montatntproduits*TVA /100
-const montantTTC = montatntproduits+montantTVA
+const montantTVA = montantproduits*TVA /100
+const montantTTC = montantproduits+montantTVA
 const montantfinal =  montantTTC+fraislivraison
 const prixmoyenTTC = montantTTC/quantite
 console.log("====RECU DE COMMANDE====");
@@ -21,3 +21,6 @@ console.log("Livraison:", fraislivraison, "FCFA")
 console.log("TOTAL A PAYER:", montantfinal, "FCFA")
 console.log("")
 console.log("Prix moyen TTC par produit :", prixmoyenTTC, "FCFA")
+console.log("Type de nom:", typeof nomClient)
+console.log("Type du prix : ", typeof prixunitaire)
+console.log("Type de la quantité :", typeof quantite)
